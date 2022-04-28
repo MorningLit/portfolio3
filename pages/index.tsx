@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
-import Intro from "../components/Intro";
+import Introduction from "../components/Introduction/Introduction";
 
 const Home: NextPage = () => {
-  return <Intro></Intro>;
+  return <Introduction />;
 };
 
 export default Home;

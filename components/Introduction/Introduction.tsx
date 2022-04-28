@@ -17,7 +17,10 @@ import {
   VisuallyHidden,
   List,
   ListItem,
+  Link,
 } from "@chakra-ui/react";
+import IntroductionText from "./IntroductionText";
+import SkillsSet from "./SkillsSet";
 
 export default function Intro() {
   return (
@@ -25,7 +28,7 @@ export default function Intro() {
       <Grid templateColumns="repeat(3, 1fr)" gap={6} py={{ base: 18, md: 24 }}>
         <GridItem colSpan={{ base: 3, lg: 1 }}>
           <Image
-            rounded={"md"}
+            rounded={"lg"}
             alt={"Ambrose's Photo"}
             src={"/Ambrose.jpg"}
             fit={"cover"}
@@ -62,22 +65,7 @@ export default function Intro() {
                 />
               }
             >
-              <VStack spacing={{ base: 4, sm: 6 }}>
-                <Text
-                  color={useColorModeValue("gray.500", "gray.400")}
-                  fontSize={"2xl"}
-                  fontWeight={"300"}
-                >
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore
-                </Text>
-                <Text fontSize={"lg"}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                  aliquid amet at delectus doloribus dolorum expedita hic, ipsum
-                  maxime modi nam officiis porro, quae, quisquam quos
-                  reprehenderit velit? Natus, totam.
-                </Text>
-              </VStack>
+              <IntroductionText />
               <Box>
                 <Text
                   fontSize={{ base: "16px", lg: "18px" }}
@@ -88,19 +76,7 @@ export default function Intro() {
                 >
                   Skills
                 </Text>
-
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  <List spacing={2}>
-                    <ListItem>Chronograph</ListItem>
-                    <ListItem>Master Chronometer Certified</ListItem>{" "}
-                    <ListItem>Tachymeter</ListItem>
-                  </List>
-                  <List spacing={2}>
-                    <ListItem>Anti‑magnetic</ListItem>
-                    <ListItem>Chronometer</ListItem>
-                    <ListItem>Small seconds</ListItem>
-                  </List>
-                </SimpleGrid>
+                <SkillsSet />
               </Box>
             </Stack>
           </Stack>
