@@ -12,8 +12,8 @@ const IntroductionText = () => {
         <span style={{ fontWeight: 500 }}>Great.</span>
       </Text>
       <Text fontSize={"lg"}>
-        Besides Frontend Development, I also have experience with Computer
-        Security and Competitive Programming.
+        Besides Frontend Development🎨, I also have experience with Computer
+        Security🔒 and Competitive Programming🔢
         <br />
         Interested to know more? My resume can be found{" "}
         <Link
