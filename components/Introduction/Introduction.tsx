@@ -1,41 +1,37 @@
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
   Image,
   Flex,
-  VStack,
-  Button,
   Heading,
-  SimpleGrid,
   Grid,
   GridItem,
   StackDivider,
   useColorModeValue,
-  VisuallyHidden,
-  List,
-  ListItem,
-  Link,
 } from "@chakra-ui/react";
 import IntroductionText from "./IntroductionText";
-import SkillsSet from "./SkillsSet";
+import SkillsSet from "./Skills/SkillsSet";
+import SocialsSet from "./Socials/SocialsSet";
 
 export default function Intro() {
   return (
     <Container maxW={"7xl"}>
       <Grid templateColumns="repeat(3, 1fr)" gap={6} py={{ base: 18, md: 24 }}>
         <GridItem colSpan={{ base: 3, lg: 1 }}>
-          <Image
-            rounded={"lg"}
-            alt={"Ambrose's Photo"}
-            src={"/Ambrose.jpg"}
-            fit={"cover"}
-            align={"center"}
-            w={"100%"}
-            h={{ base: "100%", lg: "500px" }}
-          />
+          <Flex flexDir={"column"}>
+            <Image
+              rounded={"lg"}
+              alt={"Ambrose's Photo"}
+              src={"/Ambrose.jpg"}
+              fit={"cover"}
+              align={"center"}
+              w={"100%"}
+              h={{ base: "100%", lg: "500px" }}
+            />
+            <SocialsSet />
+          </Flex>
         </GridItem>
         <GridItem colSpan={{ base: 3, lg: 2 }}>
           <Stack spacing={{ base: 6, md: 10 }}>
