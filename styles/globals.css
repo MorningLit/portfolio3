@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+figure > figcaption {
+  color: transparent;
+  font-size: 0.6vw;
+  font-weight: bold;
+  transition: color 0.555s ease-out;
+  text-align: center;
+}
+figure > span:hover + figcaption {
+  color: black;
+}

@@ -1,19 +1,73 @@
-import { SimpleGrid, List, ListItem } from "@chakra-ui/react";
+import { Flex, Text, useColorModeValue } from "@chakra-ui/react";
+import SkillIcon from "./SkillIcon";
 
 const SkillsSet = () => {
+  const languagesNames: string[] = [
+    "C++",
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+  ];
+  const webDevelopmentNames: string[] = [
+    "HTML",
+    "CSS",
+    "React",
+    "Next.js",
+    "Vue",
+    "Styled Components",
+  ];
+  const otherNames: string[] = [
+    "Android Studio",
+    "Docker",
+    "Kubernetes",
+    "GitHub Actions",
+    "Travis CI",
+    "Mocha",
+    "Cypress",
+  ];
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-      <List spacing={2}>
-        <ListItem>Chronograph</ListItem>
-        <ListItem>Master Chronometer Certified</ListItem>{" "}
-        <ListItem>Tachymeter</ListItem>
-      </List>
-      <List spacing={2}>
-        <ListItem>Anti‑magnetic</ListItem>
-        <ListItem>Chronometer</ListItem>
-        <ListItem>Small seconds</ListItem>
-      </List>
-    </SimpleGrid>
+    <Flex flexDir={"column"}>
+      <Text
+        fontSize={{ base: "14px", lg: "16px" }}
+        color={useColorModeValue("yellow.500", "yellow.300")}
+        textTransform={"uppercase"}
+        mb={"4"}
+      >
+        Languages
+      </Text>
+      <Flex>
+        {languagesNames.map((name) => (
+          <SkillIcon key={name} name={name} />
+        ))}
+      </Flex>
+      <Text
+        fontSize={{ base: "14px", lg: "16px" }}
+        color={useColorModeValue("yellow.500", "yellow.300")}
+        textTransform={"uppercase"}
+        mb={"4"}
+      >
+        Web Development
+      </Text>
+      <Flex>
+        {webDevelopmentNames.map((name) => (
+          <SkillIcon key={name} name={name} />
+        ))}
+      </Flex>
+      <Text
+        fontSize={{ base: "14px", lg: "16px" }}
+        color={useColorModeValue("yellow.500", "yellow.300")}
+        textTransform={"uppercase"}
+        mb={"4"}
+      >
+        Other Technologies
+      </Text>
+      <Flex>
+        {otherNames.map((name) => (
+          <SkillIcon key={name} name={name} />
+        ))}
+      </Flex>
+    </Flex>
   );
 };
 export default SkillsSet;
