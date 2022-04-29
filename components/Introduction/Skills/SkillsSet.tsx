@@ -15,7 +15,7 @@ const SkillsSet = () => {
     "React",
     "Next.js",
     "Vue",
-    "Styled Components",
+    "styled components",
   ];
   const otherNames: string[] = [
     "Android Studio",
@@ -36,7 +36,7 @@ const SkillsSet = () => {
       >
         Languages
       </Text>
-      <Flex>
+      <Flex overflow={"auto"}>
         {languagesNames.map((name) => (
           <SkillIcon key={name} name={name} />
         ))}
@@ -49,7 +49,7 @@ const SkillsSet = () => {
       >
         Web Development
       </Text>
-      <Flex>
+      <Flex overflow={"auto"}>
         {webDevelopmentNames.map((name) => (
           <SkillIcon key={name} name={name} />
         ))}
@@ -62,7 +62,7 @@ const SkillsSet = () => {
       >
         Other Technologies
       </Text>
-      <Flex>
+      <Flex overflow={"auto"}>
         {otherNames.map((name) => (
           <SkillIcon key={name} name={name} />
         ))}

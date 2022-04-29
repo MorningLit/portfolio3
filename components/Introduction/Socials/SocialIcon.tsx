@@ -6,8 +6,8 @@ const SocialIcon = ({ name, link }: SocialProps) => {
   return (
     <Link href={link} target="_blank" rel="noreferrer nofollow">
       <Image
-        width={"60px"}
-        height={"60px"}
+        width={"50px"}
+        height={"50px"}
         src={`/icons/${name}.png`}
         alt={name}
       />
