@@ -18,7 +18,7 @@ import SocialsSet from "./Socials/SocialsSet";
 export default function Intro() {
   return (
     <Container maxW={"7xl"}>
-      <Grid templateColumns="repeat(3, 1fr)" gap={6} py={{ base: 18, md: 24 }}>
+      <Grid templateColumns="repeat(3, 1fr)" gap={12} py={{ base: 18, md: 24 }}>
         <GridItem colSpan={{ base: 3, lg: 1 }}>
           <Flex flexDir={"column"}>
             <Image
