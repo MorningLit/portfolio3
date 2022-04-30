@@ -10,7 +10,9 @@ interface WorkDetailProps {
 const WorkDetail = ({ startDate, endDate, name }: WorkDetailProps) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Text fontWeight="500">{name}</Text>
+      <Text fontSize={"lg"} fontWeight="500">
+        {name}
+      </Text>
       <Text>—</Text>
       <Text>
         {months[startDate.getUTCMonth()]} {startDate.getFullYear()} to{" "}

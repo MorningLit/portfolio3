@@ -1,31 +1,12 @@
 import { Flex, Text, useColorModeValue } from "@chakra-ui/react";
 import SkillIcon from "./SkillIcon";
+import {
+  languagesNames,
+  webDevelopmentNames,
+  otherNames,
+} from "../../../utils/constants";
 
 const SkillsSet = () => {
-  const languagesNames: string[] = [
-    "C++",
-    "Java",
-    "JavaScript",
-    "TypeScript",
-    "Python",
-  ];
-  const webDevelopmentNames: string[] = [
-    "HTML",
-    "CSS",
-    "React",
-    "Next.js",
-    "Vue",
-    "styled components",
-  ];
-  const otherNames: string[] = [
-    "Android Studio",
-    "Docker",
-    "Kubernetes",
-    "GitHub Actions",
-    "Travis CI",
-    "Mocha",
-    "Cypress",
-  ];
   return (
     <Flex flexDir={"column"}>
       <Text
