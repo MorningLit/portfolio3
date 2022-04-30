@@ -11,9 +11,14 @@ const IntroductionText = () => {
         Hello, I am Ambrose! And I have an passion for making websites look{" "}
         <span style={{ fontWeight: 500 }}>Great.</span>
       </Text>
-      <Text fontSize={"lg"}>
-        Besides Frontend Development🎨, I also have experience with Computer
-        Security🔒 and Competitive Programming🔢
+      <Text fontSize={"lg"} lineHeight={7}>
+        I am currently a Year 4 Computer Science student studying in the{" "}
+        <span style={{ fontWeight: 500 }}>
+          National University of Singapore.
+        </span>{" "}
+        With not only an interest and experience with Frontend Development🎨, I
+        also have experience with Computer Security🔒 and Competitive
+        Programming🔢
         <br />
         Interested to know more? My resume can be found{" "}
         <Link

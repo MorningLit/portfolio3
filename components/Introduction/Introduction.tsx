@@ -48,7 +48,7 @@ export default function Intro() {
                 fontWeight={300}
                 fontSize={"2xl"}
               >
-                Frontend Engineer💻
+                Student📖 | Frontend Engineer💻
               </Text>
             </Box>
 

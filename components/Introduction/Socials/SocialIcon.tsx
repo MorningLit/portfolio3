@@ -8,6 +8,7 @@ const SocialIcon = ({ name, link }: SocialProps) => {
       <Image
         width={"50px"}
         height={"50px"}
+        layout={"fixed"}
         src={`/icons/${name}.png`}
         alt={name}
       />
