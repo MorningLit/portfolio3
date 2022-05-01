@@ -1,25 +1,34 @@
-import { VStack, Text, Link, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Text, Link, useColorModeValue, Divider } from "@chakra-ui/react";
 
 const IntroductionText = () => {
+  const spacing = 6;
   return (
-    <VStack spacing={{ base: 4, sm: 6 }}>
+    <Flex fontSize={"2xl"} flexDir={"column"}>
       <Text
         color={useColorModeValue("gray.600", "gray.400")}
-        fontSize={"2xl"}
+        fontSize={"4xl"}
         fontWeight={"300"}
       >
-        Hello, I am Ambrose! And I have an passion for making websites look{" "}
+        Hello, I am Ambrose!
+        <br /> And I have a passion for making websites look{" "}
         <span style={{ fontWeight: 500 }}>Great.</span>
+        <Divider
+          my={6}
+          borderColor={useColorModeValue("gray.200", "gray.600")}
+        />
       </Text>
-      <Text fontSize={"lg"} lineHeight={7}>
+      <Text mb={spacing}>
         I am currently a Year 4 Computer Science student studying in the{" "}
         <span style={{ fontWeight: 500 }}>
           National University of Singapore.
-        </span>{" "}
+        </span>
+      </Text>
+      <Text mb={spacing}>
         With not only an interest and experience with Frontend Development🎨, I
         also have experience with Computer Security🔒 and Competitive
         Programming🔢
-        <br />
+      </Text>
+      <Text mb={spacing}>
         Interested to know more? My resume can be found{" "}
         <Link
           target="_blank"
@@ -28,7 +37,8 @@ const IntroductionText = () => {
         >
           here!
         </Link>
-        <br />
+      </Text>
+      <Text>
         Alternatively, you can reach out to me at{" "}
         <Link href="mailto:ambroseliew1998@gmail.com" fontWeight={"500"}>
           ambroseliew1998@gmail.com
@@ -38,7 +48,7 @@ const IntroductionText = () => {
           +6584687312
         </Link>
       </Text>
-    </VStack>
+    </Flex>
   );
 };
 export default IntroductionText;
