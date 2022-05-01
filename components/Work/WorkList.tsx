@@ -4,7 +4,7 @@ import Work from "./Work";
 //TODO: improve image resizing somehow
 const WorkList = () => {
   return (
-    <Container maxW={"7xl"} p="12">
+    <Container maxW={"7xl"} p={{ base: 4, md: 12 }}>
       <Heading as="h1" id="Work">
         Work Experiences💼
       </Heading>

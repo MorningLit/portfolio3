@@ -51,6 +51,7 @@ const Project = ({ title, description, socials }: ProjectProps) => {
         flexDirection="column"
         justifyContent="center"
         marginTop={{ base: "3", sm: "0" }}
+        pl={{ base: 0, md: 4 }}
       >
         <Heading marginTop="1">{title}</Heading>
         <Text

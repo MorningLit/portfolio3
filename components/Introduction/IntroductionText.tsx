@@ -10,7 +10,8 @@ const IntroductionText = () => {
         fontWeight={"300"}
       >
         Hello, I am Ambrose!
-        <br /> And I have a passion for making websites look{" "}
+        <br />
+        And I have a passion for making websites look{" "}
         <span style={{ fontWeight: 500 }}>Great.</span>
       </Text>
       <Divider my={6} borderColor={useColorModeValue("gray.200", "gray.600")} />
@@ -31,6 +32,7 @@ const IntroductionText = () => {
           target="_blank"
           href="./Ambrose_Liew_resume.pdf"
           fontWeight={"500"}
+          textDecoration={"underline"}
         >
           here!
         </Link>
