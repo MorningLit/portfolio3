@@ -10,6 +10,7 @@ interface WorkProps {
   tags: string[];
   startDate: Date;
   endDate: Date;
+  current?: boolean;
 }
 
 const Work = ({
@@ -19,6 +20,7 @@ const Work = ({
   tags,
   startDate,
   endDate,
+  current = false,
 }: WorkProps) => {
   return (
     <Box
@@ -62,7 +64,7 @@ const Work = ({
         justifyContent="center"
         marginTop={{ base: "3", sm: "0" }}
       >
-        <WorkTag tags={tags} />
+        <WorkTag tags={tags} current={current} />
         <Heading marginTop="1">{title}</Heading>
         <Text
           as="p"

@@ -70,7 +70,7 @@ export default function Intro() {
                   textTransform={"uppercase"}
                   mb={"4"}
                 >
-                  Skills
+                  Skills🛠️
                 </Text>
                 <SkillsSet />
               </Box>

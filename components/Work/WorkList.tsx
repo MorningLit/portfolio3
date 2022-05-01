@@ -5,14 +5,15 @@ import Work from "./Work";
 const WorkList = () => {
   return (
     <Container maxW={"7xl"} p="12">
-      <Heading as="h1">Past Work Experiences</Heading>
+      <Heading as="h1">Work Experiences💼</Heading>
       <Work
         title={"Frontend Developer Intern"}
         companyName="ByteDance"
-        description={["To be confirmed..."]}
+        description={["To be confirmed at the end of my internship!"]}
         tags={["Frontend"]}
         startDate={new Date("2022-05")}
         endDate={new Date("2022-08")}
+        current
       />
       <Work
         title={"Frontend Developer Intern"}
