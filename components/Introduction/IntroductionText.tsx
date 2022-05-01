@@ -12,11 +12,8 @@ const IntroductionText = () => {
         Hello, I am Ambrose!
         <br /> And I have a passion for making websites look{" "}
         <span style={{ fontWeight: 500 }}>Great.</span>
-        <Divider
-          my={6}
-          borderColor={useColorModeValue("gray.200", "gray.600")}
-        />
       </Text>
+      <Divider my={6} borderColor={useColorModeValue("gray.200", "gray.600")} />
       <Text mb={spacing}>
         I am currently a Year 4 Computer Science student studying in the{" "}
         <span style={{ fontWeight: 500 }}>

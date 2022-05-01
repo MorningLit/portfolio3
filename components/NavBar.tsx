@@ -1,9 +1,4 @@
-import {
-  BaseSyntheticEvent,
-  MouseEventHandler,
-  ReactNode,
-  SyntheticEvent,
-} from "react";
+import { BaseSyntheticEvent, ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -18,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon } from "@chakra-ui/icons";
 
-const Links = ["Work", "Project", "Others"];
+const Links = ["Skills", "Work", "Project", "Others"];
 
 const scrollTo = (event: BaseSyntheticEvent) => {
   const text: string = event.target.childNodes[0].textContent;

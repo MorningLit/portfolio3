@@ -12,7 +12,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import IntroductionText from "./IntroductionText";
-import SkillsSet from "./Skills/SkillsSet";
 import SocialsSet from "./Socials/SocialsSet";
 
 export default function Intro() {
@@ -62,18 +61,6 @@ export default function Intro() {
               }
             >
               <IntroductionText />
-              <Box>
-                <Text
-                  fontSize={{ base: "16px", lg: "18px" }}
-                  color={useColorModeValue("yellow.500", "yellow.300")}
-                  fontWeight={"500"}
-                  textTransform={"uppercase"}
-                  mb={"4"}
-                >
-                  Skills🛠️
-                </Text>
-                <SkillsSet />
-              </Box>
             </Stack>
           </Stack>
         </GridItem>
