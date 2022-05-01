@@ -14,6 +14,7 @@ const WorkList = () => {
         startDate={new Date("2022-05")}
         endDate={new Date("2022-08")}
         current
+        heights={["80px", "100px", "120px", "140px"]}
       />
       <Work
         title={"Frontend Developer Intern"}
@@ -26,6 +27,7 @@ const WorkList = () => {
         tags={["Frontend", "Web Testing"]}
         startDate={new Date("2021-05")}
         endDate={new Date("2021-08")}
+        heights={["200px", "300px", "120px", "140px"]}
       />
     </Container>
   );

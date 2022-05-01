@@ -47,7 +47,7 @@ const Project = ({ title, description, socials }: ProjectProps) => {
       </Box>
       <Box
         display="flex"
-        flex={3}
+        flex={{ md: 1, lg: 3 }}
         flexDirection="column"
         justifyContent="center"
         marginTop={{ base: "3", sm: "0" }}

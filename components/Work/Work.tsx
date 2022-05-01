@@ -12,6 +12,7 @@ interface WorkProps {
   startDate: Date;
   endDate: Date;
   current?: boolean;
+  heights: string[];
 }
 
 const Work = ({
@@ -22,6 +23,7 @@ const Work = ({
   startDate,
   endDate,
   current = false,
+  heights,
 }: WorkProps) => {
   return (
     <Box
@@ -39,7 +41,12 @@ const Work = ({
       >
         <Box
           width={{ base: "100%" }}
-          height={{ base: "200px", sm: "320px", lg: "180px" }}
+          height={{
+            base: `${heights[0]}`,
+            sm: `${heights[1]}`,
+            md: `${heights[2]}`,
+            lg: `${heights[3]}`,
+          }}
           zIndex="2"
           marginLeft={{ base: "0", sm: "5%" }}
           marginTop="5%"
@@ -60,7 +67,7 @@ const Work = ({
       </Box>
       <Box
         display="flex"
-        flex={3}
+        flex={{ md: 1, lg: 3 }}
         flexDirection="column"
         justifyContent="center"
         marginTop={{ base: "3", sm: "0" }}
