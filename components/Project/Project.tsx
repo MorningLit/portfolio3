@@ -1,28 +1,22 @@
-import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
-import Image from "next/image";
-import WorkTag from "./WorkTag";
-import WorkDetail from "./WorkDetail";
+import {
+  Box,
+  Heading,
+  Text,
+  useColorModeValue,
+  Link,
+  HStack,
+} from "@chakra-ui/react";
 import { Fragment } from "react";
+import Image from "next/image";
+import { SocialProps } from "../Introduction/Socials/SocialsSet";
 
-interface WorkProps {
+interface ProjectProps {
   title: string;
-  companyName: string;
   description: string[];
-  tags: string[];
-  startDate: Date;
-  endDate: Date;
-  current?: boolean;
+  socials: SocialProps[];
 }
 
-const Work = ({
-  title,
-  companyName,
-  description,
-  tags,
-  startDate,
-  endDate,
-  current = false,
-}: WorkProps) => {
+const Project = ({ title, description, socials }: ProjectProps) => {
   return (
     <Box
       marginTop={{ base: "1", sm: "8" }}
@@ -44,17 +38,10 @@ const Work = ({
           marginLeft={{ base: "0", sm: "5%" }}
           marginTop="5%"
         >
-          <Image layout="fill" src={`/${companyName}.jpg`} alt={companyName} />
-        </Box>
-        <Box zIndex="1" width="100%" position="absolute" height="100%">
-          <Box
-            bgGradient={useColorModeValue(
-              "radial(orange.600 1px, transparent 1px)",
-              "radial(orange.300 1px, transparent 1px)"
-            )}
-            backgroundSize="20px 20px"
-            opacity="0.4"
-            height="100%"
+          <Image
+            layout="fill"
+            src={`/projectImages/${title}.png`}
+            alt={title}
           />
         </Box>
       </Box>
@@ -65,7 +52,6 @@ const Work = ({
         justifyContent="center"
         marginTop={{ base: "3", sm: "0" }}
       >
-        <WorkTag tags={tags} current={current} />
         <Heading marginTop="1">{title}</Heading>
         <Text
           as="p"
@@ -80,13 +66,25 @@ const Work = ({
             </Fragment>
           ))}
         </Text>
-        <WorkDetail
-          name={companyName}
-          startDate={startDate}
-          endDate={endDate}
-        />
+        <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
+          {socials.map(({ name, link }) => {
+            return (
+              <Link
+                href={link}
+                key={link}
+                target="_blank"
+                rel="noreferrer nofollow"
+                fontSize={"xl"}
+                fontWeight={500}
+              >
+                {name}
+              </Link>
+            );
+          })}
+        </HStack>
       </Box>
     </Box>
   );
 };
-export default Work;
+
+export default Project;
