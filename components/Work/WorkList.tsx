@@ -5,7 +5,9 @@ import Work from "./Work";
 const WorkList = () => {
   return (
     <Container maxW={"7xl"} p="12">
-      <Heading as="h1">Work Experiences💼</Heading>
+      <Heading as="h1" id="Work">
+        Work Experiences💼
+      </Heading>
       <Work
         title={"Frontend Developer Intern"}
         companyName="ByteDance"

@@ -76,6 +76,7 @@ const Project = ({ title, description, socials }: ProjectProps) => {
                 rel="noreferrer nofollow"
                 fontSize={"xl"}
                 fontWeight={500}
+                textDecoration={"underline"}
               >
                 {name}
               </Link>

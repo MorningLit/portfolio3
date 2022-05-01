@@ -1,4 +1,9 @@
-import { ReactNode } from "react";
+import {
+  BaseSyntheticEvent,
+  MouseEventHandler,
+  ReactNode,
+  SyntheticEvent,
+} from "react";
 import {
   Box,
   Flex,
@@ -15,6 +20,10 @@ import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon } from "@chakra-ui/icons";
 
 const Links = ["Work", "Project", "Others"];
 
+const scrollTo = (event: BaseSyntheticEvent) => {
+  const text: string = event.target.childNodes[0].textContent;
+  document.getElementById(text)?.scrollIntoView({ behavior: "smooth" });
+};
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
     px={2}
@@ -24,7 +33,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    href={"#"}
+    onClick={scrollTo}
   >
     {children}
   </Link>

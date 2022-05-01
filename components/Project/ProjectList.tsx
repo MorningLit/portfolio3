@@ -4,7 +4,9 @@ import Project from "./Project";
 const ProjectList = () => {
   return (
     <Container maxW={"7xl"} p="12">
-      <Heading as="h1">Projects📋</Heading>
+      <Heading as="h1" id={"Project"}>
+        Projects📋
+      </Heading>
       <Project
         title="Language Learners"
         description={[
