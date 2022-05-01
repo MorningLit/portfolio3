@@ -2,6 +2,7 @@ import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import WorkTag from "./WorkTag";
 import WorkDetail from "./WorkDetail";
+import { Fragment } from "react";
 
 interface WorkProps {
   title: string;
@@ -38,7 +39,7 @@ const Work = ({
       >
         <Box
           width={{ base: "100%" }}
-          height={{ base: "200px", sm: "320px", lg: "140px" }}
+          height={{ base: "200px", sm: "320px", lg: "180px" }}
           zIndex="2"
           marginLeft={{ base: "0", sm: "5%" }}
           marginTop="5%"
@@ -73,10 +74,10 @@ const Work = ({
           fontSize="lg"
         >
           {description.map((description) => (
-            <>
+            <Fragment key={description}>
               {description}
               <br />
-            </>
+            </Fragment>
           ))}
         </Text>
         <WorkDetail
