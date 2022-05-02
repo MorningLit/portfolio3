@@ -1,4 +1,11 @@
-import { Flex, Text, Link, useColorModeValue, Divider } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Link,
+  useColorModeValue,
+  Divider,
+  background,
+} from "@chakra-ui/react";
 
 const IntroductionText = () => {
   const spacing = 6;
@@ -11,6 +18,7 @@ const IntroductionText = () => {
         id={"type"}
         position={"relative"}
         maxWidth={"max-content"}
+        _before={{ background: useColorModeValue("#fff", "#1a202c") }}
       >
         Hello, I am Ambrose!
       </Text>

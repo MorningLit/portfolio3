@@ -25,7 +25,6 @@ a {
   bottom: 0;
 }
 #type::before {
-  background-color: #1a202c;
   animation: typewriter 3.6s steps(20) 1s forwards;
 }
 #type::after {
