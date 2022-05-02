@@ -6,11 +6,19 @@ const IntroductionText = () => {
     <Flex fontSize={"2xl"} flexDir={"column"}>
       <Text
         color={useColorModeValue("gray.600", "gray.400")}
-        fontSize={"4xl"}
-        fontWeight={"300"}
+        fontSize={"2xl"}
+        fontFamily={"monospace"}
+        id={"type"}
+        position={"relative"}
+        maxWidth={"max-content"}
       >
         Hello, I am Ambrose!
-        <br />
+      </Text>
+      <Text
+        color={useColorModeValue("gray.600", "gray.400")}
+        fontSize={"2xl"}
+        id={"slide"}
+      >
         And I have a passion for making websites look{" "}
         <span style={{ fontWeight: 500 }}>Great.</span>
       </Text>

@@ -14,3 +14,45 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#type::before,
+#type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#type::before {
+  background-color: #1a202c;
+  animation: typewriter 3.6s steps(20) 1s forwards;
+}
+#type::after {
+  width: 0.12em;
+  height: 90%;
+  background: black;
+  animation: typewriter 3.6s steps(20) 1s forwards,
+    blink 1.25s steps(20) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+#slide {
+  opacity: 0;
+  transform: translateX(-2.5rem);
+  animation: slideIn 3s ease 5.4s forwards;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
