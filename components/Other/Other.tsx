@@ -1,4 +1,4 @@
-import { Text, Heading, Container } from "@chakra-ui/react";
+import { Heading, Container } from "@chakra-ui/react";
 import OtherList from "./OtherList";
 
 const Other = () => {

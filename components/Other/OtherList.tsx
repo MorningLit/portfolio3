@@ -8,6 +8,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import EmojiFeature from "./EmojiFeature";
 
 interface FeatureProps {
   title: string;
@@ -62,7 +63,7 @@ const OtherList = () => {
         />
         <Feature
           title={"Kattis"}
-          text={"My Kattis profile where I practice coding questions."}
+          text={"My Kattis profile where I practice coding questions!"}
           size={60}
           link={"https://open.kattis.com/users/ambrose-liew-cheng-yuan"}
         />
@@ -73,6 +74,12 @@ const OtherList = () => {
           }
           size={45}
           link={"https://codeforces.com/profile/MorningLit"}
+        />
+        <EmojiFeature
+          emoji="📋"
+          title="Old projects"
+          text="More old projects that I did!"
+          link="/projects"
         />
       </SimpleGrid>
     </Box>
