@@ -23,13 +23,7 @@ const EmojiFeature = ({ title, text, emoji, link }: EmojiFeatureProps) => {
       >
         {emoji}
       </Flex>
-      <Link
-        target="_blank"
-        rel="noreferrer nofollow"
-        href={link}
-        fontWeight={600}
-        maxWidth={"max-content"}
-      >
+      <Link href={link} fontWeight={600} maxWidth={"max-content"}>
         {title}
       </Link>
       <Text color={useColorModeValue("gray.700", "gray.500")}>{text}</Text>

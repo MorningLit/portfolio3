@@ -1,7 +1,7 @@
 import { Container, Heading } from "@chakra-ui/react";
-import Project from "./Project";
+import Project from "../Project/Project";
 
-const ProjectList = () => {
+const OldProjectList = () => {
   return (
     <Container maxW={"7xl"} p={{ base: 4, md: 12 }}>
       <Heading as="h1" id={"Project"}>
@@ -45,6 +45,24 @@ const ProjectList = () => {
         ]}
       />
       <Project
+        title="Portfolio 2"
+        description={[
+          "My 2nd attempt at my portfolio website where the design was made completely on my own, using pure vanilla HTML and CSS.",
+        ]}
+        socials={[
+          { name: "GitHub", link: "https://github.com/MorningLit/portfolio2" },
+        ]}
+      />
+      <Project
+        title="Portfolio"
+        description={[
+          "My 1st attempt at my portfolio website where I mainly modified the design from a Youtube video.",
+        ]}
+        socials={[
+          { name: "GitHub", link: "https://github.com/MorningLit/portfolio" },
+        ]}
+      />
+      <Project
         title="FaveMovies"
         description={[
           "Website that retrieves data and displays movies, with a focus on Mobile-Responsiveness.",
@@ -54,8 +72,18 @@ const ProjectList = () => {
           { name: "GitHub", link: "https://github.com/MorningLit/FaveMovies" },
         ]}
       />
+      <Project
+        title="Folder Friend"
+        description={[
+          "CRUD To-Do list website made using React and Ruby on Rails.",
+        ]}
+        socials={[
+          { name: "GitHub", link: "https://github.com/MorningLit/CVWO" },
+          { name: "Website", link: "https://folder-friend.herokuapp.com/" },
+        ]}
+      />
     </Container>
   );
 };
 
-export default ProjectList;
+export default OldProjectList;
