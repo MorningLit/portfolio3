@@ -21,6 +21,16 @@ const OldProjectList = () => {
         ]}
       />
       <Project
+        title="Quotes"
+        description={[
+          "Website displaying quotes, to practice typewriter effect using React!",
+        ]}
+        socials={[
+          { name: "GitHub", link: "https://github.com/MorningLit/quotes" },
+          { name: "Website", link: "https://quotes-typewriter.netlify.app/" },
+        ]}
+      />
+      <Project
         title="Covid-19 Statistics Webpage"
         description={[
           "Website that retrieves and displays updated COVID-19 statistics, made using Vue!",
