@@ -31,7 +31,9 @@ const webDevelopmentNames: string[] = [
   "CSS",
   "React",
   "Next.js",
+  "Remix",
   "Vue",
+  "TailwindCSS",
   "styled components",
 ];
 const otherNames: string[] = [

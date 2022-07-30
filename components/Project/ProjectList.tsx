@@ -21,13 +21,31 @@ const ProjectList = () => {
         ]}
       />
       <Project
-        title="Covid-19 Statistics Webpage"
+        title="Recycle Go Where"
         description={[
-          "Website that retrieves and displays updated COVID-19 statistics, made using Vue!",
+          "Recycle Go Where is a convenient platform to find the appropriate e-waste recycling bin nearest to you.",
+          "Worked in a team of 4 for LifeHack 2022 Hackathon, utilising Next.js and Material UI.",
         ]}
         socials={[
-          { name: "GitHub", link: "https://github.com/MorningLit/covid-19" },
-          { name: "Website", link: "https://covid-19-vue.netlify.app/" },
+          {
+            name: "GitHub",
+            link: "https://github.com/kevinchua6/recycle-go-where",
+          },
+          { name: "Website", link: "https://recycle-gowhere.vercel.app/" },
+          {
+            name: "DevPost",
+            link: "https://devpost.com/software/recycle-go-where",
+          },
+        ]}
+      />
+      <Project
+        title="Quotes"
+        description={[
+          "Website displaying quotes, to practice typewriter effect using React!",
+        ]}
+        socials={[
+          { name: "GitHub", link: "https://github.com/MorningLit/quotes" },
+          { name: "Website", link: "https://quotes-typewriter.netlify.app/" },
         ]}
       />
       <Project
@@ -42,16 +60,6 @@ const ProjectList = () => {
             link: "https://github.com/weixin-tan/Practical-Touch",
           },
           { name: "Download", link: "http://bit.ly/practical-touch" },
-        ]}
-      />
-      <Project
-        title="FaveMovies"
-        description={[
-          "Website that retrieves data and displays movies, with a focus on Mobile-Responsiveness.",
-          "Made using React and Axios.",
-        ]}
-        socials={[
-          { name: "GitHub", link: "https://github.com/MorningLit/FaveMovies" },
         ]}
       />
     </Container>

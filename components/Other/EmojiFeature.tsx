@@ -1,4 +1,5 @@
-import { Stack, Flex, Link, Text, useColorModeValue } from "@chakra-ui/react";
+import { Stack, Flex, Text, useColorModeValue, Link } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 interface EmojiFeatureProps {
   title: string;
@@ -23,9 +24,11 @@ const EmojiFeature = ({ title, text, emoji, link }: EmojiFeatureProps) => {
       >
         {emoji}
       </Flex>
-      <Link href={link} fontWeight={600} maxWidth={"max-content"}>
-        {title}
-      </Link>
+      <NextLink href={link} passHref>
+        <Link fontWeight={600} maxWidth={"max-content"}>
+          {title}
+        </Link>
+      </NextLink>
       <Text color={useColorModeValue("gray.700", "gray.500")}>{text}</Text>
     </Stack>
   );

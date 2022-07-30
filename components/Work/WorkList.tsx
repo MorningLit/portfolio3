@@ -11,12 +11,16 @@ const WorkList = () => {
       <Work
         title={"Frontend Developer Intern"}
         companyName="ByteDance"
-        description={["To be confirmed at the end of my internship!"]}
+        description={[
+          "Utilised TypeScript, React and CSS to fulfil product requirements.",
+          "Coordinated with various teams (Product Manager, Backend and QA testing team) to fulfil product requirements.",
+          "Contributed to and resolved issues in custom React Hooks library.",
+        ]}
         tags={["Frontend"]}
         startDate={new Date("2022-05")}
         endDate={new Date("2022-08")}
         current
-        heights={["80px", "100px", "120px", "140px"]}
+        heights={["80px", "150px", "90px", "60px"]}
       />
       <Work
         title={"Frontend Developer Intern"}
@@ -29,7 +33,7 @@ const WorkList = () => {
         tags={["Frontend", "Web Testing"]}
         startDate={new Date("2021-05")}
         endDate={new Date("2021-08")}
-        heights={["200px", "300px", "120px", "140px"]}
+        heights={["200px", "380px", "285px", "200px"]}
       />
     </Container>
   );

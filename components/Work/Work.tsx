@@ -34,35 +34,23 @@ const Work = ({
     >
       <Box
         display="flex"
+        width="100%"
+        height="auto"
         flex={1}
-        marginRight="3"
-        position="relative"
         alignItems="center"
       >
         <Box
           width={{ base: "100%" }}
           height={{
-            base: `${heights[0]}`,
-            sm: `${heights[1]}`,
-            md: `${heights[2]}`,
-            lg: `${heights[3]}`,
+            base: heights[0],
+            sm: heights[1],
+            md: heights[2],
+            lg: heights[3],
           }}
-          zIndex="2"
-          marginLeft={{ base: "0", sm: "5%" }}
-          marginTop="5%"
+          marginRight="3"
+          position="relative"
         >
           <Image layout="fill" src={`/${companyName}.jpg`} alt={companyName} />
-        </Box>
-        <Box zIndex="1" width="100%" position="absolute" height="100%">
-          <Box
-            bgGradient={useColorModeValue(
-              "radial(orange.600 1px, transparent 1px)",
-              "radial(orange.300 1px, transparent 1px)"
-            )}
-            backgroundSize="20px 20px"
-            opacity="0.4"
-            height="100%"
-          />
         </Box>
       </Box>
       <Box

@@ -8,6 +8,24 @@ const OldProjectList = () => {
         Projects📋
       </Heading>
       <Project
+        title="Recycle Go Where"
+        description={[
+          "Recycle Go Where is a convenient platform to find the appropriate e-waste recycling bin nearest to you.",
+          "Worked in a team of 4 for LifeHack 2022 Hackathon, utilising Next.js and Material UI.",
+        ]}
+        socials={[
+          {
+            name: "GitHub",
+            link: "https://github.com/kevinchua6/recycle-go-where",
+          },
+          { name: "Website", link: "https://recycle-gowhere.vercel.app/" },
+          {
+            name: "DevPost",
+            link: "https://devpost.com/software/recycle-go-where",
+          },
+        ]}
+      />
+      <Project
         title="Language Learners"
         description={[
           "Website that help users to learn new languages through flashcards and an interactive game!",
