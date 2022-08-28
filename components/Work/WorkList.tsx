@@ -1,7 +1,6 @@
 import React from "react";
 import { Heading, Container } from "@chakra-ui/react";
 import Work from "./Work";
-//TODO: improve image resizing somehow
 const WorkList = () => {
   return (
     <Container maxW={"7xl"} p={{ base: 4, md: 12 }}>
@@ -12,13 +11,13 @@ const WorkList = () => {
         title={"Frontend Developer Intern"}
         companyName="ByteDance"
         description={[
-          "Utilised TypeScript, React and CSS to fulfil product requirements.",
-          "Coordinated with various teams (Product Manager, Backend and QA testing team) to fulfil product requirements.",
-          "Contributed to and resolved issues in custom React Hooks library.",
+          "Utilised TypeScript, React, CSS and coordinated with various teams to fulfil product requirements.",
+          "Designed an interactive graph application using React-flow-renderer.",
+          "Contributed to and resolved issues in internal custom React Hooks library.",
         ]}
         tags={["Frontend"]}
         startDate={new Date("2022-05")}
-        endDate={new Date("2022-08")}
+        endDate={new Date("2022-10")}
         current
         heights={["80px", "150px", "90px", "60px"]}
       />
@@ -26,9 +25,9 @@ const WorkList = () => {
         title={"Frontend Developer Intern"}
         companyName="Lenskart"
         description={[
-          "Recreated the original website using React, Next.js, and React Storefront to improve performance and user's experience.",
-          "Utilised TypeScript to minimise run-time errors and styled components to reduce code duplication.",
-          "Conducted web testing using Cypress to ensure zero bugs were present.",
+          "Redesigned the original website, https://lenskart.sg/, using React, Next.js and React Storefront to improve the performance and user experience of the website.",
+          "Performed web application testing using Cypress.io to discover and correct bugs.",
+          "Incorporated TypeScript to minimise run-time errors and Styled-Components to reduce code duplication.",
         ]}
         tags={["Frontend", "Web Testing"]}
         startDate={new Date("2021-05")}

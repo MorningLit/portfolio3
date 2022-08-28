@@ -24,7 +24,7 @@ const ProjectList = () => {
         title="Recycle Go Where"
         description={[
           "Recycle Go Where is a convenient platform to find the appropriate e-waste recycling bin nearest to you.",
-          "Worked in a team of 4 for LifeHack 2022 Hackathon, utilising Next.js and Material UI.",
+          "Worked in a team of 4 for LifeHack 2022 Hackathon, utilising Next.js, Material UI and React Google Maps library.",
         ]}
         socials={[
           {
