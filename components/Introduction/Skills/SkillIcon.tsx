@@ -10,6 +10,8 @@ const SkillIcon = ({ name }: SkillProps) => {
   const [invis, setInvis] = useState(true);
   const onMouseEnter = () => {
     setInvis(false);
+    const randomNumber = Math.floor(Math.random() * 8) + 1;
+    new Audio(`/sounds/minecraft/minecraft-pickup-0${randomNumber}.mp3`).play();
   };
   const onMouseLeave = () => {
     setInvis(true);

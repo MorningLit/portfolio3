@@ -38,14 +38,12 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const toggleColor = () => {
-    let audio;
     if (colorMode === "light") {
-      audio = new Audio("/sounds/switch-off.mov");
+      new Audio("/sounds/switch/switch-off.mp3").play();
     } else {
-      audio = new Audio("/sounds/switch-on.mov");
+      new Audio("/sounds/switch/switch-on.mp3").play();
     }
     toggleColorMode();
-    audio.play();
   };
 
   return (
