@@ -37,6 +37,16 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const toggleColor = () => {
+    let audio;
+    if (colorMode === "light") {
+      audio = new Audio("/sounds/switch-off.mov");
+    } else {
+      audio = new Audio("/sounds/switch-on.mov");
+    }
+    toggleColorMode();
+    audio.play();
+  };
 
   return (
     <>
@@ -61,7 +71,7 @@ export default function Simple() {
               ))}
             </HStack>
           </HStack>
-          <Button onClick={toggleColorMode}>
+          <Button onClick={toggleColor}>
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>
         </Flex>
