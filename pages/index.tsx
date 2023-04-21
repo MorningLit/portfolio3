@@ -6,13 +6,16 @@ import WorkList from "../components/Work/WorkList";
 import ProjectList from "../components/Project/ProjectList";
 import Other from "../components/Other/Other";
 import SkillsSection from "../components/Introduction/Skills/SkillsSection";
+import AudioWrapper from "../components/Audio/AudioWrapper";
 
 const Home: NextPage = () => {
   return (
     <>
-      <NavBar />
-      <Introduction />
-      <SkillsSection />
+      <AudioWrapper>
+        <NavBar />
+        <Introduction />
+        <SkillsSection />
+      </AudioWrapper>
       <WorkList />
       <ProjectList />
       <Other />

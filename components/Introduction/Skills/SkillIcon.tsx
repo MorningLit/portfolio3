@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Text, Box, useColorModeValue } from "@chakra-ui/react";
+import { useAudio } from "../../Audio/AudioWrapper";
 
 interface SkillProps {
   name: string;
@@ -8,8 +9,10 @@ interface SkillProps {
 
 const SkillIcon = ({ name }: SkillProps) => {
   const [invis, setInvis] = useState(true);
+  const isAudioOn = useAudio();
   const onMouseEnter = () => {
     setInvis(false);
+    if (!isAudioOn) return;
     const randomNumber = Math.floor(Math.random() * 8) + 1;
     new Audio(`/sounds/minecraft/minecraft-pickup-0${randomNumber}.mp3`).play();
   };
