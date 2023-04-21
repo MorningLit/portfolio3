@@ -1,4 +1,3 @@
-import { BaseSyntheticEvent, ReactNode, useContext } from "react";
 import {
   Box,
   Flex,
@@ -13,27 +12,31 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { useAudio, useSetAudio } from "./Audio/AudioWrapper";
+import NextLink from "next/link";
 
-const Links = ["Skills", "Work", "Project", "Others"];
+const Links = ["Home", "Blog", "Projects", "Others"];
 
-const scrollTo = (event: BaseSyntheticEvent) => {
-  const text: string = event.target.childNodes[0].textContent;
-  document.getElementById(text)?.scrollIntoView({ behavior: "smooth" });
+const NavLink = ({ url }: { url: string }) => {
+  const handleUrl = () => {
+    if (url === "Home") return "/";
+    return url.toLowerCase();
+  };
+  return (
+    <NextLink href={handleUrl()} passHref>
+      <Link
+        px={2}
+        py={1}
+        rounded={"md"}
+        _hover={{
+          textDecoration: "none",
+          bg: useColorModeValue("gray.200", "gray.700"),
+        }}
+      >
+        {url}
+      </Link>
+    </NextLink>
+  );
 };
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
-    }}
-    onClick={scrollTo}
-  >
-    {children}
-  </Link>
-);
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -72,7 +75,7 @@ export default function Simple() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link} url={link} />
               ))}
             </HStack>
           </HStack>
