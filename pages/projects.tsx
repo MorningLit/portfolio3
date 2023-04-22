@@ -6,7 +6,6 @@ import AudioWrapper from "../components/Audio/AudioWrapper";
 const Project: NextPage = () => {
   return (
     <>
-      <NavBar />
       <OldProjectList />
     </>
   );

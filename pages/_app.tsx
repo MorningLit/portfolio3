@@ -5,6 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../utils/theme";
 import AudioWrapper from "../components/Audio/AudioWrapper";
 import { Analytics } from "@vercel/analytics/react";
+import NavBar from "../components/NavBar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <AudioWrapper>
+        <NavBar />
         <Component {...pageProps} />
         <Analytics />
       </AudioWrapper>

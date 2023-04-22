@@ -11,7 +11,6 @@ import AudioWrapper from "../components/Audio/AudioWrapper";
 const Home: NextPage = () => {
   return (
     <>
-      <NavBar />
       <Introduction />
       <SkillsSection />
       <WorkList />
