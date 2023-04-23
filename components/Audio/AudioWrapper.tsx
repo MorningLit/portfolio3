@@ -6,6 +6,8 @@ const SetAudioContext = React.createContext<
 
 export function useAudio() {
   const context = React.useContext(AudioContext);
+  if (context === undefined)
+    throw new Error("useAudio must be used within a AudioWrapper");
   return context;
 }
 export function useSetAudio() {

@@ -55,3 +55,15 @@ a {
     transform: translateX(0);
   }
 }
+
+.spin:hover img {
+  animation: spin 0.3s ease-out;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
