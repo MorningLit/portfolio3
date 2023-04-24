@@ -22,19 +22,19 @@ const NavLink = ({ url }: { url: string }) => {
     return "/" + url.toLowerCase();
   };
   return (
-    <NextLink href={handleUrl()} passHref>
-      <Link
-        px={2}
-        py={1}
-        rounded={"md"}
-        _hover={{
-          textDecoration: "none",
-          bg: useColorModeValue("gray.200", "gray.700"),
-        }}
-      >
-        {url}
-      </Link>
-    </NextLink>
+    <Link
+      px={2}
+      py={1}
+      as={NextLink}
+      href={handleUrl()}
+      rounded={"md"}
+      _hover={{
+        textDecoration: "none",
+        bg: useColorModeValue("gray.200", "gray.700"),
+      }}
+    >
+      {url}
+    </Link>
   );
 };
 

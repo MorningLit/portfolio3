@@ -30,8 +30,8 @@ const SkillIcon = ({ name }: SkillProps) => {
       onMouseLeave={onMouseLeave}
     >
       <Image
-        width={"70px"}
-        height={"70px"}
+        width={70}
+        height={70}
         layout={"fixed"}
         alt={name}
         src={`/icons/${name}.png`}
