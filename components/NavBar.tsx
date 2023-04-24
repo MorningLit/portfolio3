@@ -19,7 +19,7 @@ const Links = ["Home", "Blog", "Projects", "Others"];
 const NavLink = ({ url }: { url: string }) => {
   const handleUrl = () => {
     if (url === "Home") return "/";
-    return url.toLowerCase();
+    return "/" + url.toLowerCase();
   };
   return (
     <NextLink href={handleUrl()} passHref>
