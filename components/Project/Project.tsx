@@ -37,12 +37,9 @@ const Project = ({ title, description, socials }: ProjectProps) => {
           zIndex="2"
           marginLeft={{ base: "0", sm: "5%" }}
           marginTop="5%"
+          pos={"relative"}
         >
-          <Image
-            layout="fill"
-            src={`/projectImages/${title}.png`}
-            alt={title}
-          />
+          <Image fill src={`/projectImages/${title}.png`} alt={title} />
         </Box>
       </Box>
       <Box

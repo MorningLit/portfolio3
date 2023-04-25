@@ -3,7 +3,6 @@ import {
   Container,
   Stack,
   Text,
-  Image,
   Flex,
   Heading,
   Grid,
@@ -11,28 +10,36 @@ import {
   StackDivider,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import IntroductionText from "./IntroductionText";
 import SocialsSet from "./Socials/SocialsSet";
 
 export default function Intro() {
   return (
-    <Container maxW={"7xl"}>
-      <Grid templateColumns="repeat(3, 1fr)" gap={12} pt={{ base: 18, md: 24 }}>
-        <GridItem colSpan={{ base: 3, lg: 1 }}>
+    <Container maxW={"7xl"} py={{ base: 4, lg: 12 }}>
+      <Grid
+        templateColumns={{ base: "repeat(3, 1fr)", lg: "repeat(12,1fr)" }}
+        gap={12}
+        pt={{ base: 0 }}
+      >
+        <GridItem colSpan={{ base: 3, lg: 4 }}>
           <Flex flexDir={"column"}>
-            <Image
-              rounded={"lg"}
-              alt={"Ambrose's Photo"}
-              src={"/Ambrose.jpg"}
-              fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={{ base: "100%", lg: "500px" }}
-            />
+            <Box
+              pos={"relative"}
+              h={{ base: "250px", sm: "400px", md: "500px", lg: "600px" }}
+            >
+              <Image
+                alt={"Ambrose's Photo"}
+                src={"/Ambrose.jpg"}
+                priority
+                fill
+                style={{ objectFit: "cover", borderRadius: "32px" }}
+              />
+            </Box>
             <SocialsSet />
           </Flex>
         </GridItem>
-        <GridItem colSpan={{ base: 3, lg: 2 }}>
+        <GridItem colSpan={{ base: 3, lg: 8 }}>
           <Stack spacing={{ base: 6, md: 10 }}>
             <Box as={"header"}>
               <Heading

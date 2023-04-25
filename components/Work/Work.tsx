@@ -50,7 +50,7 @@ const Work = ({
           marginRight="3"
           position="relative"
         >
-          <Image layout="fill" src={`/${companyName}.jpg`} alt={companyName} />
+          <Image fill src={`/${companyName}.jpg`} alt={companyName} />
         </Box>
       </Box>
       <Box

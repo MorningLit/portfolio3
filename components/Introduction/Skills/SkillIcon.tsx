@@ -28,13 +28,14 @@ const SkillIcon = ({ name }: SkillProps) => {
       className="spin"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      w={70}
     >
       <Image
         width={70}
         height={70}
-        layout={"fixed"}
         alt={name}
         src={`/icons/${name}.png`}
+        style={{ maxWidth: "none" }}
       />
       <Text
         fontSize={{ base: "0.9rem", sm: "0.8rem", lg: "0.7rem" }}

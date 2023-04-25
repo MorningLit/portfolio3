@@ -3,7 +3,7 @@ import Project from "./Project";
 
 const ProjectList = () => {
   return (
-    <Container maxW={"7xl"} p={{ base: 4, md: 12 }}>
+    <Container maxW={"7xl"} py={{ base: 4, md: 12 }}>
       <Heading as="h1" id={"Project"}>
         Projects📋
       </Heading>
