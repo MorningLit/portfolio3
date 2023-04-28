@@ -26,11 +26,12 @@ const SkillIcon = ({ name }: SkillProps) => {
   useEffect(() => {
     if (ref == null || ref.current == null) return;
     const spin = ref.current;
-    spin.addEventListener("animationend", () => {
+    const spinHandler = () => {
       spin.classList.remove("spin");
-    });
+    };
+    spin.addEventListener("animationend", spinHandler);
+    return () => spin.removeEventListener("animationend", spinHandler);
   }, []);
-  // if feeling crazy then add event handlers and detect when animation ends -> so that the icon will spin to completion (hover will trigger animation)
   return (
     <Box
       mx={1}
