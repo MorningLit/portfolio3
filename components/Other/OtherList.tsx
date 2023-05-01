@@ -46,7 +46,7 @@ const Feature = ({ title, text, size, link }: FeatureProps) => {
       >
         {title}
       </Link>
-      <Text color={useColorModeValue("gray.700", "gray.500")}>{text}</Text>
+      <Text>{text}</Text>
     </Stack>
   );
 };
@@ -56,10 +56,10 @@ const OtherList = () => {
     <Box p={4}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
-          title={"Medium"}
-          text={"Here is where I share my learnings!"}
+          title={"LeetCode"}
+          text={"My LeetCode profile where I practice interview questions!"}
           size={40}
-          link={"https://medium.com/@ambroseliew1998"}
+          link={"https://leetcode.com/MorningLit/"}
         />
         <Feature
           title={"Kattis"}
@@ -74,6 +74,12 @@ const OtherList = () => {
           }
           size={45}
           link={"https://codeforces.com/profile/MorningLit"}
+        />
+        <Feature
+          title={"dev.to"}
+          text={"My Dev.to profile! (It has the same articles as on my Medium)"}
+          size={40}
+          link={"https://dev.to/morninglit"}
         />
         <EmojiFeature
           emoji="📋"

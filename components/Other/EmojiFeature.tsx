@@ -27,7 +27,7 @@ const EmojiFeature = ({ title, text, emoji, link }: EmojiFeatureProps) => {
       <Link as={NextLink} href={link} fontWeight={600} maxWidth={"max-content"}>
         {title}
       </Link>
-      <Text color={useColorModeValue("gray.700", "gray.500")}>{text}</Text>
+      <Text>{text}</Text>
     </Stack>
   );
 };

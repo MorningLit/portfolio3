@@ -17,7 +17,7 @@ const months = [
 const socialsNames: SocialProps[] = [
   { name: "LinkedIn", link: "https://www.linkedin.com/in/ambrose-liew/" },
   { name: "GitHub", link: "https://github.com/MorningLit" },
-  { name: "LeetCode", link: "https://leetcode.com/MorningLit/" },
+  { name: "Medium", link: "https://medium.com/@ambroseliew1998" },
 ];
 const languagesNames: string[] = [
   "C++",
@@ -32,10 +32,10 @@ const webDevelopmentNames: string[] = [
   "React",
   "Next.js",
   "Remix",
-  "Vue",
   "Three.js",
   "TailwindCSS",
   "styled components",
+  "Vue",
 ];
 const otherNames: string[] = [
   "Android Studio",
