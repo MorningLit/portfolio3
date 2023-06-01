@@ -4,12 +4,7 @@ import SkillsSet from "./SkillsSet";
 const SkillsSection = () => {
   return (
     <Container maxW={"7xl"} py={{ base: 4, lg: 12 }}>
-      <Heading
-        as={"h1"}
-        id={"Skills"}
-        color={useColorModeValue("yellow.500", "yellow.300")}
-        mb={"4"}
-      >
+      <Heading as={"h1"} id={"Skills"} mb={"4"}>
         Skills🛠️
       </Heading>
       <SkillsSet />

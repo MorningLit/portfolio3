@@ -63,6 +63,11 @@ const Work = ({
       >
         <WorkTag tags={tags} current={current} />
         <Heading marginTop="1">{title}</Heading>
+        <WorkDetail
+          name={companyName}
+          startDate={startDate}
+          endDate={endDate}
+        />
         <Text
           as="p"
           marginTop="2"
@@ -76,11 +81,6 @@ const Work = ({
             </Fragment>
           ))}
         </Text>
-        <WorkDetail
-          name={companyName}
-          startDate={startDate}
-          endDate={endDate}
-        />
       </Box>
     </Box>
   );

@@ -39,17 +39,17 @@ const SkillIcon = ({ name }: SkillProps) => {
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      w={70}
+      w={"72px"}
     >
       <Image
-        width={70}
-        height={70}
+        width={72}
+        height={72}
         alt={name}
         src={`/icons/${name}.png`}
         style={{ maxWidth: "none" }}
       />
       <Text
-        fontSize={{ base: "0.9rem", sm: "0.8rem", lg: "0.7rem" }}
+        fontSize={{ base: "0.7rem" }}
         fontWeight={"bold"}
         transition={"color 0.555s ease-out"}
         color={invis ? "transparent" : color}

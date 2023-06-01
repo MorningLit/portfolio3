@@ -11,9 +11,8 @@ const SkillsSet = () => {
     <Flex flexDir={"column"}>
       <Text
         fontSize={{ base: "14px", lg: "16px" }}
-        color={useColorModeValue("yellow.500", "yellow.300")}
-        textTransform={"uppercase"}
         mb={"4"}
+        fontWeight={"bold"}
       >
         Languages
       </Text>
@@ -24,9 +23,8 @@ const SkillsSet = () => {
       </Flex>
       <Text
         fontSize={{ base: "14px", lg: "16px" }}
-        color={useColorModeValue("yellow.500", "yellow.300")}
-        textTransform={"uppercase"}
         mb={"4"}
+        fontWeight={"bold"}
       >
         Web Development
       </Text>
@@ -37,11 +35,10 @@ const SkillsSet = () => {
       </Flex>
       <Text
         fontSize={{ base: "14px", lg: "16px" }}
-        color={useColorModeValue("yellow.500", "yellow.300")}
-        textTransform={"uppercase"}
         mb={"4"}
+        fontWeight={"bold"}
       >
-        Other Technologies
+        Others
       </Text>
       <Flex overflow={"auto"}>
         {otherNames.map((name) => (

@@ -35,9 +35,12 @@ const webDevelopmentNames: string[] = [
   "Three.js",
   "TailwindCSS",
   "styled components",
+  "Supabase",
+  "PostgreSQL",
   "Vue",
 ];
 const otherNames: string[] = [
+  "React Native",
   "Android Studio",
   "Docker",
   "Kubernetes",
