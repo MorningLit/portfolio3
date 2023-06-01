@@ -8,6 +8,15 @@ const WorkList = () => {
         Work Experiences💼
       </Heading>
       <Work
+        title={"Full Stack Developer"}
+        companyName="CyberOwl"
+        description={["Coming soon..."]}
+        tags={["Frontend", "Backend"]}
+        startDate={new Date("2023-06")}
+        endDate={new Date("")}
+        heights={["260px", "430px", "280px", "190px"]}
+      />
+      <Work
         title={"Frontend Developer Intern"}
         companyName="ByteDance"
         description={[
