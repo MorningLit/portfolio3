@@ -3,10 +3,10 @@ import OtherList from "./OtherList";
 
 const Other = () => {
   return (
-    <Container maxW={"7xl"} p={{ base: 4, md: 12 }}>
+    <div>
       <Heading id="Others">Others❓</Heading>
       <OtherList />
-    </Container>
+    </div>
   );
 };
 

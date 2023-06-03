@@ -3,7 +3,7 @@ import Project from "./Project";
 
 const ProjectList = () => {
   return (
-    <Container maxW={"7xl"} py={{ base: 4, md: 12 }}>
+    <div>
       <Heading as="h1" id={"Project"}>
         Projects📋
       </Heading>
@@ -62,7 +62,7 @@ const ProjectList = () => {
           { name: "Download", link: "http://bit.ly/practical-touch" },
         ]}
       />
-    </Container>
+    </div>
   );
 };
 

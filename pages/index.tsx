@@ -8,14 +8,13 @@ import SkillsSection from "../components/Introduction/Skills/SkillsSection";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div style={{ gap: "64px" }}>
       <Introduction />
       <SkillsSection />
       <WorkList />
       <ProjectList />
       <Other />
-      <Footer />
-    </>
+    </div>
   );
 };
 

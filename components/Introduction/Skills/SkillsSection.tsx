@@ -3,12 +3,12 @@ import SkillsSet from "./SkillsSet";
 
 const SkillsSection = () => {
   return (
-    <Container maxW={"7xl"} py={{ base: 4, lg: 12 }}>
+    <div>
       <Heading as={"h1"} id={"Skills"} mb={"4"}>
         Skills🛠️
       </Heading>
       <SkillsSet />
-    </Container>
+    </div>
   );
 };
 export default SkillsSection;

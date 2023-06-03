@@ -1,11 +1,11 @@
 import { Container } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import styles from "./styles.module.css";
+import styles from "./container-queries.module.css";
 
 const ContainerDemo = () => {
   return (
-    <Container maxW={"7xl"} py={{ base: 4, lg: 12 }}>
+    <div>
       <div>
         <span>Browser Support: </span>
         <a
@@ -17,7 +17,7 @@ const ContainerDemo = () => {
           Link
         </a>
       </div>
-      <p>Resize your browser!</p>
+      <p style={{ fontSize: "2rem" }}>Resize your browser!</p>
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <Image
@@ -45,7 +45,7 @@ const ContainerDemo = () => {
           </p>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 

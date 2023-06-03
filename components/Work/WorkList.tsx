@@ -3,7 +3,7 @@ import { Heading, Container } from "@chakra-ui/react";
 import Work from "./Work";
 const WorkList = () => {
   return (
-    <Container maxW={"7xl"} py={{ base: 4, md: 12 }}>
+    <div>
       <Heading as="h1" id="Work">
         Work Experiences💼
       </Heading>
@@ -43,7 +43,7 @@ const WorkList = () => {
         endDate={new Date("2021-08")}
         heights={["200px", "380px", "285px", "200px"]}
       />
-    </Container>
+    </div>
   );
 };
 export default WorkList;

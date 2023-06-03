@@ -5,7 +5,7 @@ import React from "react";
 
 const Others: NextPage = () => {
   return (
-    <Container maxW={"7xl"} py={{ base: 4, lg: 12 }}>
+    <div>
       {/**TODO: stylise page */}
       <ul>
         <h3>HTML</h3>
@@ -17,7 +17,7 @@ const Others: NextPage = () => {
         </li>
         <h3>CSS</h3>
         <li>
-          <Link href="/others/container-queries">Accent Color</Link>
+          <Link href="/others/accent-color">Accent Color</Link>
         </li>
         <li>
           <Link href="/others/container-queries">Container Queries</Link>
@@ -26,7 +26,7 @@ const Others: NextPage = () => {
           <Link href="/others/container-queries">Scroll-linked Animations</Link>
         </li>
       </ul>
-    </Container>
+    </div>
   );
 };
 

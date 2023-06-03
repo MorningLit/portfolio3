@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Container } from "@chakra-ui/react";
 import theme from "../utils/theme";
 import AudioWrapper from "../components/Audio/AudioWrapper";
 import { Analytics } from "@vercel/analytics/react";
@@ -22,8 +22,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <AudioWrapper>
         <NavBar />
-        <Component {...pageProps} />
-        {/* add footer only if all pages span full height <Footer /> */}
+        <Container maxW="7xl" pt={{ base: 4, lg: 12 }} minH={"100vh"}>
+          <Component {...pageProps} />
+        </Container>
+        <Footer />
         <Analytics />
         <Script
           strategy="afterInteractive"
