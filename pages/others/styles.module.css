@@ -1,0 +1,27 @@
+.container {
+  container: post / inline-size;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 240px;
+  border: 1px solid red;
+}
+.text {
+  flex: 3;
+  background-color: green;
+  padding: 12px;
+}
+.image {
+  margin: initial;
+}
+
+@container post (width <= 1100px) {
+  .wrapper {
+    display: block;
+    height: auto;
+  }
+  .image {
+    margin: auto;
+  }
+}

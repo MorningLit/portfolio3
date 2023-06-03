@@ -7,6 +7,7 @@ import AudioWrapper from "../components/Audio/AudioWrapper";
 import { Analytics } from "@vercel/analytics/react";
 import NavBar from "../components/NavBar";
 import Script from "next/script";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <AudioWrapper>
         <NavBar />
         <Component {...pageProps} />
+        {/* add footer only if all pages span full height <Footer /> */}
         <Analytics />
         <Script
           strategy="afterInteractive"

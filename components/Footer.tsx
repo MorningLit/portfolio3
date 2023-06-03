@@ -8,7 +8,7 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { SiMedium } from "react-icons/si";
 import { ReactNode } from "react";
 
 const SocialButton = ({
@@ -72,10 +72,10 @@ export default function SmallWithSocial() {
             <FaGithub />
           </SocialButton>
           <SocialButton
-            label={"LeetCode"}
-            href={"https://leetcode.com/MorningLit/"}
+            label={"Medium"}
+            href={"https://medium.com/@ambroseliew1998"}
           >
-            <SiLeetcode />
+            <SiMedium />
           </SocialButton>
         </Stack>
       </Container>
