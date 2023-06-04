@@ -1,21 +1,28 @@
-import { Container } from "@chakra-ui/react";
+import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
 import { NextPage } from "next";
-import Link from "next/link";
+import NextLink from "next/link";
 import React from "react";
 
+const Link = (linkProps: LinkProps) => {
+  return (
+    <ChakraLink as={NextLink} {...linkProps}>
+      {linkProps.children}
+    </ChakraLink>
+  );
+};
 const Others: NextPage = () => {
   return (
     <div>
-      {/**TODO: stylise page */}
+      <h1 style={{ fontSize: "2.25rem", fontWeight: 600 }}>Frontend Demos</h1>
       <ul>
-        <h3>HTML</h3>
+        <h3 style={{ fontSize: "1.5rem" }}>HTML</h3>
         <li>
           <Link href="/others/dialog">Dialog</Link>
         </li>
         <li>
           <Link href="/others/dialog">Popover</Link>
         </li>
-        <h3>CSS</h3>
+        <h3 style={{ fontSize: "1.5rem" }}>CSS</h3>
         <li>
           <Link href="/others/accent-color">Accent Color</Link>
         </li>

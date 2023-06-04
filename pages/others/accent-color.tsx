@@ -1,20 +1,11 @@
 import React from "react";
 import styles from "./accent-color.module.css";
+import Header from "../../components/Other/demos/Header";
 const AccentColor = () => {
   const [accentColor, setAccentColor] = React.useState("#000000");
   return (
     <div>
-      <div>
-        <span>Browser Support: </span>
-        <a
-          style={{ textDecoration: "underline" }}
-          href="https://caniuse.com/mdn-css_properties_accent-color"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Link
-        </a>
-      </div>
+      <Header link="https://caniuse.com/mdn-css_properties_accent-color" />
       <div>
         <label className={styles.label}>
           Checkbox
@@ -29,6 +20,7 @@ const AccentColor = () => {
           Radio
           <input
             type="radio"
+            defaultChecked
             style={{ accentColor, width: "1.25rem", height: "1.25rem" }}
             className={styles.input}
           />
@@ -43,6 +35,7 @@ const AccentColor = () => {
         </label>
         <label className={styles.label}>
           Progress
+          {/*TODO: have a progress bar demo and animate progress bar */}
           <progress
             style={{ accentColor, border: "revert", height: "16px" }}
             value={"50"}

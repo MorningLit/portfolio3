@@ -1,22 +1,12 @@
-import { Container } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 import styles from "./container-queries.module.css";
+import Header from "../../components/Other/demos/Header";
 
 const ContainerDemo = () => {
   return (
     <div>
-      <div>
-        <span>Browser Support: </span>
-        <a
-          style={{ textDecoration: "underline" }}
-          href="https://caniuse.com/css-container-queries"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Link
-        </a>
-      </div>
+      <Header link="https://caniuse.com/css-container-queries" />
       <p style={{ fontSize: "2rem" }}>Resize your browser!</p>
       <div className={styles.container}>
         <div className={styles.wrapper}>
