@@ -2,12 +2,14 @@ import React from "react";
 import Header from "../../components/Other/demos/Header";
 
 const Dialog = () => {
-  const ref = React.useRef<HTMLDialogElement>(null);
+  const ref = React.useRef<any>(null);
+  //type is any because HTMLDialogElement does not work now
   const [fruit, setFruit] = React.useState("");
   const handleCancel = () => {
     ref.current?.close();
   };
   const handleSubmit = (e: any) => {
+    //type is any because it is a pain in the ass to set up form name types properly
     e.preventDefault();
     setFruit(e.target.fruit.value);
     ref.current?.close();
