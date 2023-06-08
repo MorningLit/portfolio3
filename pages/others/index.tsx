@@ -22,7 +22,7 @@ const Others: NextPage = () => {
             <Link href="/others/dialog">Dialog</Link>
           </li>
           <li>
-            <Link href="/others/dialog">Popover</Link>
+            <Link href="/others/popover">Popover</Link>
           </li>
           <h3 style={{ fontSize: "1.5rem" }}>CSS</h3>
           <li>
