@@ -13,26 +13,37 @@ const Link = (linkProps: LinkProps) => {
 const Others: NextPage = () => {
   return (
     <div>
-      <h1 style={{ fontSize: "2.25rem", fontWeight: 600 }}>Frontend Demos</h1>
-      <ul>
-        <h3 style={{ fontSize: "1.5rem" }}>HTML</h3>
-        <li>
-          <Link href="/others/dialog">Dialog</Link>
-        </li>
-        <li>
-          <Link href="/others/dialog">Popover</Link>
-        </li>
-        <h3 style={{ fontSize: "1.5rem" }}>CSS</h3>
-        <li>
-          <Link href="/others/accent-color">Accent Color</Link>
-        </li>
-        <li>
-          <Link href="/others/container-queries">Container Queries</Link>
-        </li>
-        <li>
-          <Link href="/others/container-queries">Scroll-linked Animations</Link>
-        </li>
-      </ul>
+      <h1 style={{ fontSize: "2.25rem", fontWeight: 700 }}>Demos</h1>
+      <div>
+        <h2 style={{ fontSize: "2rem", fontWeight: 600 }}>Frontend Demos</h2>
+        <ul>
+          <h3 style={{ fontSize: "1.5rem" }}>HTML</h3>
+          <li>
+            <Link href="/others/dialog">Dialog</Link>
+          </li>
+          <li>
+            <Link href="/others/dialog">Popover</Link>
+          </li>
+          <h3 style={{ fontSize: "1.5rem" }}>CSS</h3>
+          <li>
+            <Link href="/others/accent-color">Accent Color</Link>
+          </li>
+          <li>
+            <Link href="/others/container-queries">Container Queries</Link>
+          </li>
+          <li>
+            <Link href="/others/container-queries">
+              Scroll-linked Animations
+            </Link>
+          </li>
+          <li>
+            <Link href="/others/container-queries">Subgrid</Link>
+          </li>
+          <li>
+            <Link href="/others/container-queries">Houdini</Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

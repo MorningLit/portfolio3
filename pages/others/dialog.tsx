@@ -7,7 +7,7 @@ const Dialog = () => {
   const handleCancel = () => {
     ref.current?.close();
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setFruit(e.target.fruit.value);
     ref.current?.close();
