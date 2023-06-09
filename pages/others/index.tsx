@@ -31,7 +31,7 @@ const Others: NextPage = () => {
           <li>
             <Link href="/others/container-queries">Container Queries</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/others/container-queries">
               Scroll-linked Animations
             </Link>
@@ -41,7 +41,7 @@ const Others: NextPage = () => {
           </li>
           <li>
             <Link href="/others/container-queries">Houdini</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

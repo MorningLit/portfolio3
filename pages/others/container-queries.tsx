@@ -1,18 +1,23 @@
-import Image from "next/image";
-import React from "react";
-import styles from "./container-queries.module.css";
 import Header from "../../components/Other/demos/Header";
+import Sandpack from "../../components/Sandpack";
 
 const ContainerDemo = () => {
   return (
     <div>
       <Header link="https://caniuse.com/css-container-queries" />
-      <p style={{ fontSize: "2rem" }}>Resize your browser!</p>
+      <Sandpack
+        file={`import React from "react";
+import styles from "./container-queries.module.css";
+import Sandpack from "../../components/Sandpack";
+export default function Demo() {
+  return (
+    <div>
+      <p style={{ fontSize: "2rem" }}>Resize!</p>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <Image
+          <img
             alt="Example"
-            src={"/examples/4by3.png"}
+            src={"https://upload.wikimedia.org/wikipedia/commons/a/a2/Aspect_ratio_-_4x3.svg"}
             width="320"
             height="240"
             className={styles.image}
@@ -26,15 +31,45 @@ const ContainerDemo = () => {
             ea velit. Harum id recusandae deleniti rem provident dolorum
             quisquam unde fuga, ducimus iste quia, in molestias ut voluptatum
             assumenda perferendis commodi eum accusantium, eius sit
-            exercitationem. Sit, error! Ratione obcaecati debitis, accusamus
-            amet, nostrum similique perspiciatis cumque omnis laboriosam eveniet
-            pariatur magnam quas veritatis eius repellendus quae dolor voluptate
-            quia aspernatur, aperiam fugiat a explicabo. Velit nam tempore
-            perspiciatis, incidunt odio amet iste cumque, sint facilis quidem
-            rerum quis eos ipsam quas excepturi, itaque aliquam qui accusantium
+            exercitationem. 
           </p>
         </div>
       </div>
+    </div>
+  );
+}
+`}
+        otherFiles={{
+          "/container-queries.module.css": `.container {
+  container: post / inline-size;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 240px;
+  border: 1px solid red;
+}
+.text {
+  margin: 0;
+  flex: 3;
+  background-color: green;
+  padding: 12px;
+}
+.image {
+  margin: initial;
+}
+
+@container post (width <= 800px) {
+  .wrapper {
+    display: block;
+    height: auto;
+  }
+  .image {
+    margin: auto;
+  }
+}`,
+        }}
+      />
     </div>
   );
 };
