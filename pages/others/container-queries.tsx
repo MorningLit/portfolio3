@@ -8,7 +8,6 @@ const ContainerDemo = () => {
       <Sandpack
         file={`import React from "react";
 import styles from "./container-queries.module.css";
-import Sandpack from "../../components/Sandpack";
 export default function Demo() {
   return (
     <div>
@@ -17,7 +16,7 @@ export default function Demo() {
         <div className={styles.wrapper}>
           <img
             alt="Example"
-            src={"https://upload.wikimedia.org/wikipedia/commons/a/a2/Aspect_ratio_-_4x3.svg"}
+            src={"//unsplash.it/320/240"}
             width="320"
             height="240"
             className={styles.image}
@@ -73,5 +72,37 @@ export default function Demo() {
     </div>
   );
 };
+
+import React from "react";
+import styles from "./container-queries.module.css";
+function Demo() {
+  return (
+    <div>
+      <p style={{ fontSize: "2rem" }}>Resize!</p>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <img
+            alt="Example"
+            src={"//unsplash.it/320/240"}
+            width="320"
+            height="240"
+            className={styles.image}
+          />
+          <p className={styles.text}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            corporis asperiores suscipit soluta molestias quo architecto ut
+            accusantium incidunt quibusdam cumque veritatis provident,
+            consectetur nostrum, non excepturi cum ratione! Nam. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Fuga alias aspernatur
+            ea velit. Harum id recusandae deleniti rem provident dolorum
+            quisquam unde fuga, ducimus iste quia, in molestias ut voluptatum
+            assumenda perferendis commodi eum accusantium, eius sit
+            exercitationem.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default ContainerDemo;

@@ -17,7 +17,7 @@
   margin: initial;
 }
 
-@container post (width <= 1100px) {
+@container post (width <= 800px) {
   .wrapper {
     display: block;
     height: auto;

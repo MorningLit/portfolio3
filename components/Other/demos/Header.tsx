@@ -1,21 +1,29 @@
 import React from "react";
 import ViewAllDemosButton from "./ViewAllDemosButton";
 
-const Header = ({ link }: { link: string }) => {
+const Header = ({ link }: { link?: string }) => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        marginBottom: "8px",
+      }}
+    >
       <ViewAllDemosButton />
-      <span>
-        Browser Support:{" "}
-        <a
-          style={{ textDecoration: "underline" }}
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Link
-        </a>
-      </span>
+      {link && (
+        <span>
+          Browser Support:{" "}
+          <a
+            style={{ textDecoration: "underline" }}
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Link
+          </a>
+        </span>
+      )}
     </div>
   );
 };

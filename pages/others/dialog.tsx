@@ -36,7 +36,7 @@ export default function Demo() {
             </label>
           </p>
           <div>
-            <button onClick={handleCancel}>Cancel</button>
+            <button type="button" onClick={handleCancel}>Cancel</button>
             <button type="submit">Confirm</button>
           </div>
         </form>
@@ -82,7 +82,9 @@ function Demo() {
             </label>
           </p>
           <div>
-            <button onClick={handleCancel}>Cancel</button>
+            <button type="button" onClick={handleCancel}>
+              Cancel
+            </button>
             <button type="submit">Confirm</button>
           </div>
         </form>

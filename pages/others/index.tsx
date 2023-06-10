@@ -31,6 +31,10 @@ const Others: NextPage = () => {
           <li>
             <Link href="/others/container-queries">Container Queries</Link>
           </li>
+          <h3 style={{ fontSize: "1.5rem" }}>Design</h3>
+          <li>
+            <Link href="/others/star-button">Shooting star button</Link>
+          </li>
           {/* <li>
             <Link href="/others/container-queries">
               Scroll-linked Animations

@@ -7,7 +7,13 @@ import SkillsSection from "../components/Introduction/Skills/SkillsSection";
 
 const Home: NextPage = () => {
   return (
-    <div style={{ gap: "64px", display: "flex", flexDirection: "column" }}>
+    <div
+      style={{
+        gap: "64px",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Introduction />
       <SkillsSection />
       <WorkList />
